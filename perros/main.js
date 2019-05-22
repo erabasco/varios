@@ -1,3 +1,4 @@
+// Tarea de la clínica
 "use strict";
 var xmlHttp;
 let dialogo, dialogHistorial, fila, accion;
