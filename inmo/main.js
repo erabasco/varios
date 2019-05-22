@@ -20,7 +20,7 @@ $(function () {
     cargarZonas();
     // si pulsamos sobre buscar validamos antes que todo esté relleno
     $(".boton").click(function () {
-        // añadimos un nuevo metodo a validator
+        // añadimos un nuevo metodo a validator - Luis
         $.validator.addMethod("dni", function (valor, item, parametros) {
 
             let dni = valor;
