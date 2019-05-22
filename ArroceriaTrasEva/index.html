@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Arrocería Trassierra</title>
+   <link rel="stylesheet" href="libreria/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libreria/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+   
+
+   
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal form-pedido" autocomplete="off">
+                    <fieldset>
+                        <legend class="text-center header">Arrocería Trassierra</legend>
+                        <div class="input-group mb-3 col-md-4">
+                            <div class="col form-check">
+                                <input class="form-check-input" type="radio" name="radios" id="local" value="local">
+                                <label class="form-check-label" for="radios">
+                                    Recoger en local
+                                </label>
+                            </div>
+                            <div class="col form-check">
+                                <input class="form-check-input" type="radio" name="radios" id="domicilio"
+                                    value="domicilio">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    llevar a Domicilio
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col input-group mb-3 col-md-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Paellas </span>
+                                </div>
+                                <select id="paellas" name="paellas" class="form-control">
+                                    <option value="">Seleccione paellas</option>
+                                </select>
+                            </div>
+
+                            <div class="col input-group mb-3 col-md-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Ingredientes</span>
+                                </div>
+                                <select id="ingredientes" name="ingredientes" class="form-control">
+                                    <option value="">Seleccione ingredientes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="input-group mb-3">
+                                <div class="col-md-4 card">
+                                    <h5 class="card-header">Lista Ingredientes</h5>
+                                    <div class="card-body liIngr">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col input-group mb-3 col-md-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Nº Comensales</span>
+                                </div>
+                                <input type="number" name="comensales" class="form-control comensales" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+                            <div class="col input-group mb-3 col-md-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Precio</span>
+                                </div>
+                                <input type="number" class="form-control precio" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" readonly>
+                            </div>
+                        </div>
+                        <div class="form-row text-center">
+                            <div class="col-md-12">
+                                <button type="submit" class="boton btn btn-primary btn-lg">Guardar</button>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div id="datos">
+            <hr>
+            <div class="well well-sm">
+
+                <form class="form-datos" autocomplete="off">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="domicilio">Domicilio:</label>
+                            <input type="text" class="form-control domicil" name="domicilio">
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
+
+        <!-- librerias -->
+        <script src="libreria/bootstrap/js/bootstrap.min.js"></script>
+        <script src="libreria/crearObjetoAjax.js"></script>
+        <script src="libreria/jquery-3.3.1.min.js"></script>
+        <script src="libreria/jquery-ui/jquery-ui.min.js"></script>
+        <script src="libreria/jquery-validation/jquery.validate.min.js"></script>
+        <script src="libreria/sweetAlert/sweetalert2.js"></script>
+        <script src="main.js"></script>
+       
+</body>
+
+</html>
