@@ -1,3 +1,4 @@
+//mari luz
 let xmlHttp, dialogo;
 $(function () {
   xmlHttp = crearConexion(); //creamos objeto xmlHttp
